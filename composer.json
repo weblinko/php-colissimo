@@ -19,5 +19,7 @@
     },
     "scripts": {
       "phpstan": "vendor/bin/phpstan analyze src --level=3"
-    }
+    },
+    "type": "library",
+    "license": "MIT"
 }
