@@ -1,6 +1,6 @@
 {
     "name": "weblinko/php-colissimo",
-    "description": "Package generated from https://ws.colissimo.fr/sls-ws/SlsServiceWS/2.0?wsdl using wsdltophp/packagegenerator",
+    "description": "Package generated from https://ws.colissimo.fr/sls-ws/SlsServiceWS/2.0?wsdl",
     "require": {
         "php": ">=7.4",
         "ext-dom": "*",
