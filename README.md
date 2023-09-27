@@ -3,7 +3,7 @@
 [![License](https://poser.pugx.org/weblinko/php-colissimo/license.svg)](https://github.com/weblinko/php-colissimo/blob/master/LICENSE)
 
 # php-colissimo
-This package has been generated from the [Colissimo Postage Web Services](https://ws.colissimo.fr/sls-ws/SlsServiceWS?wsdl) and [Colissimo Tracking Web Services](https://www.coliposte.fr/tracking-chargeur-cxf/TrackingServiceWS?wsdl) WSDL using the [PackageGenerator](https://github.com/WsdlToPhp/PackageGenerator) project.
+This package has been generated from the [Colissimo Postage Web Services](https://ws.colissimo.fr/sls-ws/SlsServiceWS?wsdl) and [Colissimo Tracking Web Services](https://www.coliposte.fr/tracking-chargeur-cxf/TrackingServiceWS?wsdl) WSDL.
 
 ## How to install ?
 
