@@ -1,16 +1,10 @@
 <?php
 /**
- * Weblinko - SocialEngine Module
- *
- * Project     BigKIds
- *
- * @category   Application_Extensions
  * @package    
  * @file       ResponseReader.php
  * @version    
  * @copyright  Copyright 7/2/2022 Weblinko
  * @license    http://www.weblinko.fr/license/
- * @author:    Cédric Rolant
  **/
 
 class MTOM_ResponseReader
