@@ -22,14 +22,14 @@ class GenerateCN23Request extends AbstractStructBase
     public $password;
     /**
      * The letter
-     * @var \Colissimo\StructType\Letter
+     * @var \Colissimo\StructType\TypeLetter
      */
     public $letter;
     /**
      * The fields
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\Fields
+     * @var \Colissimo\StructType\TypeFields
      */
     public $fields;
     /**
@@ -40,10 +40,10 @@ class GenerateCN23Request extends AbstractStructBase
      * @uses GenerateCN23Request::setFields()
      * @param string $contractNumber
      * @param string $password
-     * @param \Colissimo\StructType\Letter $letter
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeLetter $letter
+     * @param \Colissimo\StructType\TypeFields $fields
      */
-    public function __construct($contractNumber = null, $password = null, \Colissimo\StructType\Letter $letter = null, \Colissimo\StructType\Fields $fields = null)
+    public function __construct($contractNumber = null, $password = null, \Colissimo\StructType\TypeLetter $letter = null, \Colissimo\StructType\TypeFields $fields = null)
     {
         $this
             ->setContractNumber($contractNumber)
@@ -97,7 +97,7 @@ class GenerateCN23Request extends AbstractStructBase
     }
     /**
      * Get letter value
-     * @return \Colissimo\StructType\Letter|null
+     * @return \Colissimo\StructType\TypeLetter|null
      */
     public function getLetter()
     {
@@ -105,17 +105,17 @@ class GenerateCN23Request extends AbstractStructBase
     }
     /**
      * Set letter value
-     * @param \Colissimo\StructType\Letter $letter
+     * @param \Colissimo\StructType\TypeLetter $letter
      * @return \Colissimo\StructType\GenerateCN23Request
      */
-    public function setLetter(\Colissimo\StructType\Letter $letter = null)
+    public function setLetter(\Colissimo\StructType\TypeLetter $letter = null)
     {
         $this->letter = $letter;
         return $this;
     }
     /**
      * Get fields value
-     * @return \Colissimo\StructType\Fields|null
+     * @return \Colissimo\StructType\TypeFields|null
      */
     public function getFields()
     {
@@ -123,10 +123,10 @@ class GenerateCN23Request extends AbstractStructBase
     }
     /**
      * Set fields value
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeFields $fields
      * @return \Colissimo\StructType\GenerateCN23Request
      */
-    public function setFields(\Colissimo\StructType\Fields $fields = null)
+    public function setFields(\Colissimo\StructType\TypeFields $fields = null)
     {
         $this->fields = $fields;
         return $this;

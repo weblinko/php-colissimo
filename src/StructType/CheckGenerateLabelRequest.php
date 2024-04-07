@@ -24,19 +24,19 @@ class CheckGenerateLabelRequest extends AbstractStructBase
      * The outputFormat
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\OutputFormat
+     * @var \Colissimo\StructType\TypeOutputFormat
      */
     public $outputFormat;
     /**
      * The letter
-     * @var \Colissimo\StructType\Letter
+     * @var \Colissimo\StructType\TypeLetter
      */
     public $letter;
     /**
      * The fields
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\Fields
+     * @var \Colissimo\StructType\TypeFields
      */
     public $fields;
     /**
@@ -48,11 +48,11 @@ class CheckGenerateLabelRequest extends AbstractStructBase
      * @uses CheckGenerateLabelRequest::setFields()
      * @param string $contractNumber
      * @param string $password
-     * @param \Colissimo\StructType\OutputFormat $outputFormat
-     * @param \Colissimo\StructType\Letter $letter
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeOutputFormat $outputFormat
+     * @param \Colissimo\StructType\TypeLetter $letter
+     * @param \Colissimo\StructType\TypeFields $fields
      */
-    public function __construct($contractNumber = null, $password = null, \Colissimo\StructType\OutputFormat $outputFormat = null, \Colissimo\StructType\Letter $letter = null, \Colissimo\StructType\Fields $fields = null)
+    public function __construct($contractNumber = null, $password = null, \Colissimo\StructType\TypeOutputFormat $outputFormat = null, \Colissimo\StructType\TypeLetter $letter = null, \Colissimo\StructType\TypeFields $fields = null)
     {
         $this
             ->setContractNumber($contractNumber)
@@ -107,7 +107,7 @@ class CheckGenerateLabelRequest extends AbstractStructBase
     }
     /**
      * Get outputFormat value
-     * @return \Colissimo\StructType\OutputFormat|null
+     * @return \Colissimo\StructType\TypeOutputFormat|null
      */
     public function getOutputFormat()
     {
@@ -115,17 +115,17 @@ class CheckGenerateLabelRequest extends AbstractStructBase
     }
     /**
      * Set outputFormat value
-     * @param \Colissimo\StructType\OutputFormat $outputFormat
+     * @param \Colissimo\StructType\TypeOutputFormat $outputFormat
      * @return \Colissimo\StructType\CheckGenerateLabelRequest
      */
-    public function setOutputFormat(\Colissimo\StructType\OutputFormat $outputFormat = null)
+    public function setOutputFormat(\Colissimo\StructType\TypeOutputFormat $outputFormat = null)
     {
         $this->outputFormat = $outputFormat;
         return $this;
     }
     /**
      * Get letter value
-     * @return \Colissimo\StructType\Letter|null
+     * @return \Colissimo\StructType\TypeLetter|null
      */
     public function getLetter()
     {
@@ -133,17 +133,17 @@ class CheckGenerateLabelRequest extends AbstractStructBase
     }
     /**
      * Set letter value
-     * @param \Colissimo\StructType\Letter $letter
+     * @param \Colissimo\StructType\TypeLetter $letter
      * @return \Colissimo\StructType\CheckGenerateLabelRequest
      */
-    public function setLetter(\Colissimo\StructType\Letter $letter = null)
+    public function setLetter(\Colissimo\StructType\TypeLetter $letter = null)
     {
         $this->letter = $letter;
         return $this;
     }
     /**
      * Get fields value
-     * @return \Colissimo\StructType\Fields|null
+     * @return \Colissimo\StructType\TypeFields|null
      */
     public function getFields()
     {
@@ -151,10 +151,10 @@ class CheckGenerateLabelRequest extends AbstractStructBase
     }
     /**
      * Set fields value
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeFields $fields
      * @return \Colissimo\StructType\CheckGenerateLabelRequest
      */
-    public function setFields(\Colissimo\StructType\Fields $fields = null)
+    public function setFields(\Colissimo\StructType\TypeFields $fields = null)
     {
         $this->fields = $fields;
         return $this;

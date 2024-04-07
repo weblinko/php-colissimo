@@ -14,22 +14,22 @@ class LabelV2Response extends LabelResponse
      * The fields
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\Fields
+     * @var \Colissimo\StructType\TypeFields
      */
     public $fields;
     /**
      * Constructor method for labelV2Response
      * @uses LabelV2Response::setFields()
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeFields $fields
      */
-    public function __construct(\Colissimo\StructType\Fields $fields = null)
+    public function __construct(\Colissimo\StructType\TypeFields $fields = null)
     {
         $this
             ->setFields($fields);
     }
     /**
      * Get fields value
-     * @return \Colissimo\StructType\Fields|null
+     * @return \Colissimo\StructType\TypeFields|null
      */
     public function getFields()
     {
@@ -37,10 +37,10 @@ class LabelV2Response extends LabelResponse
     }
     /**
      * Set fields value
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeFields $fields
      * @return \Colissimo\StructType\LabelV2Response
      */
-    public function setFields(\Colissimo\StructType\Fields $fields = null)
+    public function setFields(\Colissimo\StructType\TypeFields $fields = null)
     {
         $this->fields = $fields;
         return $this;

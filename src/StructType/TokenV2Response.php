@@ -5,10 +5,10 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for xmlV2Response StructType
+ * This class stands for tokenV2Response StructType
  * @subpackage Structs
  */
-class XmlV2Response extends XmlResponse
+class TokenV2Response extends TokenResponse
 {
     /**
      * The fields
@@ -18,8 +18,8 @@ class XmlV2Response extends XmlResponse
      */
     public $fields;
     /**
-     * Constructor method for xmlV2Response
-     * @uses XmlV2Response::setFields()
+     * Constructor method for tokenV2Response
+     * @uses TokenV2Response::setFields()
      * @param \Colissimo\StructType\TypeFields $fields
      */
     public function __construct(\Colissimo\StructType\TypeFields $fields = null)
@@ -38,7 +38,7 @@ class XmlV2Response extends XmlResponse
     /**
      * Set fields value
      * @param \Colissimo\StructType\TypeFields $fields
-     * @return \Colissimo\StructType\XmlV2Response
+     * @return \Colissimo\StructType\TokenV2Response
      */
     public function setFields(\Colissimo\StructType\TypeFields $fields = null)
     {

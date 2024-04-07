@@ -14,7 +14,7 @@ class GenerateCN23V2ResponseType extends BaseResponse
      * The fields
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\Fields
+     * @var \Colissimo\StructType\TypeFields
      */
     public $fields;
     /**
@@ -29,10 +29,10 @@ class GenerateCN23V2ResponseType extends BaseResponse
      * Constructor method for GenerateCN23V2ResponseType
      * @uses GenerateCN23V2ResponseType::setFields()
      * @uses GenerateCN23V2ResponseType::setCn23()
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeFields $fields
      * @param string $cn23
      */
-    public function __construct(\Colissimo\StructType\Fields $fields = null, $cn23 = null)
+    public function __construct(\Colissimo\StructType\TypeFields $fields = null, $cn23 = null)
     {
         $this
             ->setFields($fields)
@@ -40,7 +40,7 @@ class GenerateCN23V2ResponseType extends BaseResponse
     }
     /**
      * Get fields value
-     * @return \Colissimo\StructType\Fields|null
+     * @return \Colissimo\StructType\TypeFields|null
      */
     public function getFields()
     {
@@ -48,10 +48,10 @@ class GenerateCN23V2ResponseType extends BaseResponse
     }
     /**
      * Set fields value
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeFields $fields
      * @return \Colissimo\StructType\GenerateCN23V2ResponseType
      */
-    public function setFields(\Colissimo\StructType\Fields $fields = null)
+    public function setFields(\Colissimo\StructType\TypeFields $fields = null)
     {
         $this->fields = $fields;
         return $this;

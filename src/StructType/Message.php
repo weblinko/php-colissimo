@@ -5,7 +5,7 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Message StructType
+ * This class stands for message StructType
  * @subpackage Structs
  */
 class Message extends AbstractStructBase
@@ -32,7 +32,7 @@ class Message extends AbstractStructBase
      */
     public $type;
     /**
-     * Constructor method for Message
+     * Constructor method for message
      * @uses Message::setId()
      * @uses Message::setMessageContent()
      * @uses Message::setType()

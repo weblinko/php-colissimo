@@ -5,10 +5,10 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for outputFormat StructType
+ * This class stands for typeOutputFormat StructType
  * @subpackage Structs
  */
-class OutputFormat extends AbstractStructBase
+class TypeOutputFormat extends AbstractStructBase
 {
     /**
      * The x
@@ -53,13 +53,13 @@ class OutputFormat extends AbstractStructBase
      */
     public $printCODDocument;
     /**
-     * Constructor method for outputFormat
-     * @uses OutputFormat::setX()
-     * @uses OutputFormat::setY()
-     * @uses OutputFormat::setOutputPrintingType()
-     * @uses OutputFormat::setDematerialized()
-     * @uses OutputFormat::setReturnType()
-     * @uses OutputFormat::setPrintCODDocument()
+     * Constructor method for typeOutputFormat
+     * @uses TypeOutputFormat::setX()
+     * @uses TypeOutputFormat::setY()
+     * @uses TypeOutputFormat::setOutputPrintingType()
+     * @uses TypeOutputFormat::setDematerialized()
+     * @uses TypeOutputFormat::setReturnType()
+     * @uses TypeOutputFormat::setPrintCODDocument()
      * @param int $x
      * @param int $y
      * @param string $outputPrintingType
@@ -88,7 +88,7 @@ class OutputFormat extends AbstractStructBase
     /**
      * Set x value
      * @param int $x
-     * @return \Colissimo\StructType\OutputFormat
+     * @return \Colissimo\StructType\TypeOutputFormat
      */
     public function setX($x = null)
     {
@@ -110,7 +110,7 @@ class OutputFormat extends AbstractStructBase
     /**
      * Set y value
      * @param int $y
-     * @return \Colissimo\StructType\OutputFormat
+     * @return \Colissimo\StructType\TypeOutputFormat
      */
     public function setY($y = null)
     {
@@ -132,7 +132,7 @@ class OutputFormat extends AbstractStructBase
     /**
      * Set outputPrintingType value
      * @param string $outputPrintingType
-     * @return \Colissimo\StructType\OutputFormat
+     * @return \Colissimo\StructType\TypeOutputFormat
      */
     public function setOutputPrintingType($outputPrintingType = null)
     {
@@ -154,7 +154,7 @@ class OutputFormat extends AbstractStructBase
     /**
      * Set dematerialized value
      * @param bool $dematerialized
-     * @return \Colissimo\StructType\OutputFormat
+     * @return \Colissimo\StructType\TypeOutputFormat
      */
     public function setDematerialized($dematerialized = null)
     {
@@ -176,7 +176,7 @@ class OutputFormat extends AbstractStructBase
     /**
      * Set returnType value
      * @param string $returnType
-     * @return \Colissimo\StructType\OutputFormat
+     * @return \Colissimo\StructType\TypeOutputFormat
      */
     public function setReturnType($returnType = null)
     {
@@ -198,7 +198,7 @@ class OutputFormat extends AbstractStructBase
     /**
      * Set printCODDocument value
      * @param bool $printCODDocument
-     * @return \Colissimo\StructType\OutputFormat
+     * @return \Colissimo\StructType\TypeOutputFormat
      */
     public function setPrintCODDocument($printCODDocument = null)
     {

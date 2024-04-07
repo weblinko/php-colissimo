@@ -5,10 +5,10 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for letter StructType
+ * This class stands for typeLetter StructType
  * @subpackage Structs
  */
-class Letter extends AbstractStructBase
+class TypeLetter extends AbstractStructBase
 {
     /**
      * The service
@@ -43,7 +43,7 @@ class Letter extends AbstractStructBase
      * The codSenderAddress
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\CodSenderAddress
+     * @var \Colissimo\StructType\TypeAdresse
      */
     public $codSenderAddress;
     /**
@@ -54,23 +54,23 @@ class Letter extends AbstractStructBase
      */
     public $uploadDocument;
     /**
-     * Constructor method for letter
-     * @uses Letter::setService()
-     * @uses Letter::setParcel()
-     * @uses Letter::setCustomsDeclarations()
-     * @uses Letter::setSender()
-     * @uses Letter::setAddressee()
-     * @uses Letter::setCodSenderAddress()
-     * @uses Letter::setUploadDocument()
+     * Constructor method for typeLetter
+     * @uses TypeLetter::setService()
+     * @uses TypeLetter::setParcel()
+     * @uses TypeLetter::setCustomsDeclarations()
+     * @uses TypeLetter::setSender()
+     * @uses TypeLetter::setAddressee()
+     * @uses TypeLetter::setCodSenderAddress()
+     * @uses TypeLetter::setUploadDocument()
      * @param \Colissimo\StructType\Service $service
      * @param \Colissimo\StructType\Parcel $parcel
      * @param \Colissimo\StructType\CustomsDeclarations $customsDeclarations
      * @param \Colissimo\StructType\Sender $sender
      * @param \Colissimo\StructType\Addressee $addressee
-     * @param \Colissimo\StructType\CodSenderAddress $codSenderAddress
+     * @param \Colissimo\StructType\TypeAdresse $codSenderAddress
      * @param \Colissimo\StructType\UploadDocument $uploadDocument
      */
-    public function __construct(\Colissimo\StructType\Service $service = null, \Colissimo\StructType\Parcel $parcel = null, \Colissimo\StructType\CustomsDeclarations $customsDeclarations = null, \Colissimo\StructType\Sender $sender = null, \Colissimo\StructType\Addressee $addressee = null, \Colissimo\StructType\CodSenderAddress $codSenderAddress = null, \Colissimo\StructType\UploadDocument $uploadDocument = null)
+    public function __construct(\Colissimo\StructType\Service $service = null, \Colissimo\StructType\Parcel $parcel = null, \Colissimo\StructType\CustomsDeclarations $customsDeclarations = null, \Colissimo\StructType\Sender $sender = null, \Colissimo\StructType\Addressee $addressee = null, \Colissimo\StructType\TypeAdresse $codSenderAddress = null, \Colissimo\StructType\UploadDocument $uploadDocument = null)
     {
         $this
             ->setService($service)
@@ -92,7 +92,7 @@ class Letter extends AbstractStructBase
     /**
      * Set service value
      * @param \Colissimo\StructType\Service $service
-     * @return \Colissimo\StructType\Letter
+     * @return \Colissimo\StructType\TypeLetter
      */
     public function setService(\Colissimo\StructType\Service $service = null)
     {
@@ -110,7 +110,7 @@ class Letter extends AbstractStructBase
     /**
      * Set parcel value
      * @param \Colissimo\StructType\Parcel $parcel
-     * @return \Colissimo\StructType\Letter
+     * @return \Colissimo\StructType\TypeLetter
      */
     public function setParcel(\Colissimo\StructType\Parcel $parcel = null)
     {
@@ -128,7 +128,7 @@ class Letter extends AbstractStructBase
     /**
      * Set customsDeclarations value
      * @param \Colissimo\StructType\CustomsDeclarations $customsDeclarations
-     * @return \Colissimo\StructType\Letter
+     * @return \Colissimo\StructType\TypeLetter
      */
     public function setCustomsDeclarations(\Colissimo\StructType\CustomsDeclarations $customsDeclarations = null)
     {
@@ -146,7 +146,7 @@ class Letter extends AbstractStructBase
     /**
      * Set sender value
      * @param \Colissimo\StructType\Sender $sender
-     * @return \Colissimo\StructType\Letter
+     * @return \Colissimo\StructType\TypeLetter
      */
     public function setSender(\Colissimo\StructType\Sender $sender = null)
     {
@@ -164,7 +164,7 @@ class Letter extends AbstractStructBase
     /**
      * Set addressee value
      * @param \Colissimo\StructType\Addressee $addressee
-     * @return \Colissimo\StructType\Letter
+     * @return \Colissimo\StructType\TypeLetter
      */
     public function setAddressee(\Colissimo\StructType\Addressee $addressee = null)
     {
@@ -173,7 +173,7 @@ class Letter extends AbstractStructBase
     }
     /**
      * Get codSenderAddress value
-     * @return \Colissimo\StructType\CodSenderAddress|null
+     * @return \Colissimo\StructType\TypeAdresse|null
      */
     public function getCodSenderAddress()
     {
@@ -181,10 +181,10 @@ class Letter extends AbstractStructBase
     }
     /**
      * Set codSenderAddress value
-     * @param \Colissimo\StructType\CodSenderAddress $codSenderAddress
-     * @return \Colissimo\StructType\Letter
+     * @param \Colissimo\StructType\TypeAdresse $codSenderAddress
+     * @return \Colissimo\StructType\TypeLetter
      */
-    public function setCodSenderAddress(\Colissimo\StructType\CodSenderAddress $codSenderAddress = null)
+    public function setCodSenderAddress(\Colissimo\StructType\TypeAdresse $codSenderAddress = null)
     {
         $this->codSenderAddress = $codSenderAddress;
         return $this;
@@ -200,7 +200,7 @@ class Letter extends AbstractStructBase
     /**
      * Set uploadDocument value
      * @param \Colissimo\StructType\UploadDocument $uploadDocument
-     * @return \Colissimo\StructType\Letter
+     * @return \Colissimo\StructType\TypeLetter
      */
     public function setUploadDocument(\Colissimo\StructType\UploadDocument $uploadDocument = null)
     {

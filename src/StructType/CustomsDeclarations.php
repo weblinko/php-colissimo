@@ -18,6 +18,13 @@ class CustomsDeclarations extends AbstractStructBase
      */
     public $includeCustomsDeclarations;
     /**
+     * The numberOfCopies
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var int
+     */
+    public $numberOfCopies;
+    /**
      * The contents
      * Meta information extracted from the WSDL
      * - minOccurs: 0
@@ -84,12 +91,13 @@ class CustomsDeclarations extends AbstractStructBase
      * The importerAddress
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\ImporterAddress
+     * @var \Colissimo\StructType\TypeAdresse
      */
     public $importerAddress;
     /**
      * Constructor method for customsDeclarations
      * @uses CustomsDeclarations::setIncludeCustomsDeclarations()
+     * @uses CustomsDeclarations::setNumberOfCopies()
      * @uses CustomsDeclarations::setContents()
      * @uses CustomsDeclarations::setImportersReference()
      * @uses CustomsDeclarations::setImportersContact()
@@ -101,6 +109,7 @@ class CustomsDeclarations extends AbstractStructBase
      * @uses CustomsDeclarations::setCertificatNumber()
      * @uses CustomsDeclarations::setImporterAddress()
      * @param bool $includeCustomsDeclarations
+     * @param int $numberOfCopies
      * @param \Colissimo\StructType\Contents $contents
      * @param string $importersReference
      * @param string $importersContact
@@ -110,12 +119,13 @@ class CustomsDeclarations extends AbstractStructBase
      * @param string $invoiceNumber
      * @param string $licenceNumber
      * @param string $certificatNumber
-     * @param \Colissimo\StructType\ImporterAddress $importerAddress
+     * @param \Colissimo\StructType\TypeAdresse $importerAddress
      */
-    public function __construct($includeCustomsDeclarations = null, \Colissimo\StructType\Contents $contents = null, $importersReference = null, $importersContact = null, $officeOrigin = null, $comments = null, $description = null, $invoiceNumber = null, $licenceNumber = null, $certificatNumber = null, \Colissimo\StructType\ImporterAddress $importerAddress = null)
+    public function __construct($includeCustomsDeclarations = null, $numberOfCopies = null, \Colissimo\StructType\Contents $contents = null, $importersReference = null, $importersContact = null, $officeOrigin = null, $comments = null, $description = null, $invoiceNumber = null, $licenceNumber = null, $certificatNumber = null, \Colissimo\StructType\TypeAdresse $importerAddress = null)
     {
         $this
             ->setIncludeCustomsDeclarations($includeCustomsDeclarations)
+            ->setNumberOfCopies($numberOfCopies)
             ->setContents($contents)
             ->setImportersReference($importersReference)
             ->setImportersContact($importersContact)
@@ -147,6 +157,28 @@ class CustomsDeclarations extends AbstractStructBase
             throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($includeCustomsDeclarations, true), gettype($includeCustomsDeclarations)), __LINE__);
         }
         $this->includeCustomsDeclarations = $includeCustomsDeclarations;
+        return $this;
+    }
+    /**
+     * Get numberOfCopies value
+     * @return int|null
+     */
+    public function getNumberOfCopies()
+    {
+        return $this->numberOfCopies;
+    }
+    /**
+     * Set numberOfCopies value
+     * @param int $numberOfCopies
+     * @return \Colissimo\StructType\CustomsDeclarations
+     */
+    public function setNumberOfCopies($numberOfCopies = null)
+    {
+        // validation for constraint: int
+        if (!is_null($numberOfCopies) && !(is_int($numberOfCopies) || ctype_digit($numberOfCopies))) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($numberOfCopies, true), gettype($numberOfCopies)), __LINE__);
+        }
+        $this->numberOfCopies = $numberOfCopies;
         return $this;
     }
     /**
@@ -345,7 +377,7 @@ class CustomsDeclarations extends AbstractStructBase
     }
     /**
      * Get importerAddress value
-     * @return \Colissimo\StructType\ImporterAddress|null
+     * @return \Colissimo\StructType\TypeAdresse|null
      */
     public function getImporterAddress()
     {
@@ -353,10 +385,10 @@ class CustomsDeclarations extends AbstractStructBase
     }
     /**
      * Set importerAddress value
-     * @param \Colissimo\StructType\ImporterAddress $importerAddress
+     * @param \Colissimo\StructType\TypeAdresse $importerAddress
      * @return \Colissimo\StructType\CustomsDeclarations
      */
-    public function setImporterAddress(\Colissimo\StructType\ImporterAddress $importerAddress = null)
+    public function setImporterAddress(\Colissimo\StructType\TypeAdresse $importerAddress = null)
     {
         $this->importerAddress = $importerAddress;
         return $this;

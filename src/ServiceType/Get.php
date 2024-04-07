@@ -30,6 +30,25 @@ class Get extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named getLabel
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Colissimo\StructType\GetLabel $parameters
+     * @return \Colissimo\StructType\GetLabelResponse|bool
+     */
+    public function getLabel(\Colissimo\StructType\GetLabel $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->getLabel($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
+    /**
      * Method to call the operation originally named getProductInter
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -70,7 +89,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Colissimo\StructType\GetBordereauByNumberResponse|\Colissimo\StructType\GetListMailBoxPickingDatesResponse|\Colissimo\StructType\GetProductInterResponse
+     * @return \Colissimo\StructType\GetBordereauByNumberResponse|\Colissimo\StructType\GetLabelResponse|\Colissimo\StructType\GetListMailBoxPickingDatesResponse|\Colissimo\StructType\GetProductInterResponse
      */
     public function getResult()
     {

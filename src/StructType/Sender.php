@@ -11,20 +11,6 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
 class Sender extends AbstractStructBase
 {
     /**
-     * The senderParcelRef
-     * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string
-     */
-    public $senderParcelRef;
-    /**
-     * The address
-     * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var \Colissimo\StructType\Address
-     */
-    public $address;
-    /**
      * The line0
      * Meta information extracted from the WSDL
      * - minOccurs: 0
@@ -72,44 +58,21 @@ class Sender extends AbstractStructBase
      */
     public $city;
     /**
-     * The companyName
+     * The senderParcelRef
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * @var string
      */
-    public $companyName;
+    public $senderParcelRef;
     /**
-     * The lastName
+     * The address
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var string
+     * @var \Colissimo\StructType\TypeAdresse
      */
-    public $lastName;
-    /**
-     * The firstName
-     * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string
-     */
-    public $firstName;
-    /**
-     * The email
-     * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string
-     */
-    public $email;
-    /**
-     * The phoneNumber
-     * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var string
-     */
-    public $phoneNumber;
+    public $address;
     /**
      * Constructor method for sender
-     * @uses Sender::setSenderParcelRef()
-     * @uses Sender::setAddress()
      * @uses Sender::setLine0()
      * @uses Sender::setLine1()
      * @uses Sender::setLine2()
@@ -117,13 +80,8 @@ class Sender extends AbstractStructBase
      * @uses Sender::setCountryCode()
      * @uses Sender::setZipCode()
      * @uses Sender::setCity()
-     * @uses Sender::setCompanyName()
-     * @uses Sender::setLastName()
-     * @uses Sender::setFirstName()
-     * @uses Sender::setEmail()
-     * @uses Sender::setPhoneNumber()
-     * @param string $senderParcelRef
-     * @param \Colissimo\StructType\Address $address
+     * @uses Sender::setSenderParcelRef()
+     * @uses Sender::setAddress()
      * @param string $line0
      * @param string $line1
      * @param string $line2
@@ -131,17 +89,12 @@ class Sender extends AbstractStructBase
      * @param string $countryCode
      * @param string $zipCode
      * @param string $city
-     * @param string $companyName
-     * @param string $lastName
-     * @param string $firstName
-     * @param string $email
-     * @param string $phoneNumber
+     * @param string $senderParcelRef
+     * @param \Colissimo\StructType\TypeAdresse $address
      */
-    public function __construct($senderParcelRef = null, \Colissimo\StructType\Address $address = null, $line0 = null, $line1 = null, $line2 = null, $line3 = null, $countryCode = null, $zipCode = null, $city = null, $companyName = null, $lastName = null, $firstName = null, $email = null, $phoneNumber = null)
+    public function __construct($line0 = null, $line1 = null, $line2 = null, $line3 = null, $countryCode = null, $zipCode = null, $city = null, $senderParcelRef = null, \Colissimo\StructType\TypeAdresse $address = null)
     {
         $this
-            ->setSenderParcelRef($senderParcelRef)
-            ->setAddress($address)
             ->setLine0($line0)
             ->setLine1($line1)
             ->setLine2($line2)
@@ -149,51 +102,8 @@ class Sender extends AbstractStructBase
             ->setCountryCode($countryCode)
             ->setZipCode($zipCode)
             ->setCity($city)
-            ->setCompanyName($companyName)
-            ->setLastName($lastName)
-            ->setFirstName($firstName)
-            ->setEmail($email)
-            ->setPhoneNumber($phoneNumber);
-    }
-    /**
-     * Get senderParcelRef value
-     * @return string|null
-     */
-    public function getSenderParcelRef()
-    {
-        return $this->senderParcelRef;
-    }
-    /**
-     * Set senderParcelRef value
-     * @param string $senderParcelRef
-     * @return \Colissimo\StructType\Sender
-     */
-    public function setSenderParcelRef($senderParcelRef = null)
-    {
-        // validation for constraint: string
-        if (!is_null($senderParcelRef) && !is_string($senderParcelRef)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($senderParcelRef, true), gettype($senderParcelRef)), __LINE__);
-        }
-        $this->senderParcelRef = $senderParcelRef;
-        return $this;
-    }
-    /**
-     * Get address value
-     * @return \Colissimo\StructType\Address|null
-     */
-    public function getAddress()
-    {
-        return $this->address;
-    }
-    /**
-     * Set address value
-     * @param \Colissimo\StructType\Address $address
-     * @return \Colissimo\StructType\Sender
-     */
-    public function setAddress(\Colissimo\StructType\Address $address = null)
-    {
-        $this->address = $address;
-        return $this;
+            ->setSenderParcelRef($senderParcelRef)
+            ->setAddress($address);
     }
     /**
      * Get line0 value
@@ -350,113 +260,43 @@ class Sender extends AbstractStructBase
         return $this;
     }
     /**
-     * Get companyName value
+     * Get senderParcelRef value
      * @return string|null
      */
-    public function getCompanyName()
+    public function getSenderParcelRef()
     {
-        return $this->companyName;
+        return $this->senderParcelRef;
     }
     /**
-     * Set companyName value
-     * @param string $companyName
+     * Set senderParcelRef value
+     * @param string $senderParcelRef
      * @return \Colissimo\StructType\Sender
      */
-    public function setCompanyName($companyName = null)
+    public function setSenderParcelRef($senderParcelRef = null)
     {
         // validation for constraint: string
-        if (!is_null($companyName) && !is_string($companyName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($companyName, true), gettype($companyName)), __LINE__);
+        if (!is_null($senderParcelRef) && !is_string($senderParcelRef)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($senderParcelRef, true), gettype($senderParcelRef)), __LINE__);
         }
-        $this->companyName = $companyName;
+        $this->senderParcelRef = $senderParcelRef;
         return $this;
     }
     /**
-     * Get lastName value
-     * @return string|null
+     * Get address value
+     * @return \Colissimo\StructType\TypeAdresse|null
      */
-    public function getLastName()
+    public function getAddress()
     {
-        return $this->lastName;
+        return $this->address;
     }
     /**
-     * Set lastName value
-     * @param string $lastName
+     * Set address value
+     * @param \Colissimo\StructType\TypeAdresse $address
      * @return \Colissimo\StructType\Sender
      */
-    public function setLastName($lastName = null)
+    public function setAddress(\Colissimo\StructType\TypeAdresse $address = null)
     {
-        // validation for constraint: string
-        if (!is_null($lastName) && !is_string($lastName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastName, true), gettype($lastName)), __LINE__);
-        }
-        $this->lastName = $lastName;
-        return $this;
-    }
-    /**
-     * Get firstName value
-     * @return string|null
-     */
-    public function getFirstName()
-    {
-        return $this->firstName;
-    }
-    /**
-     * Set firstName value
-     * @param string $firstName
-     * @return \Colissimo\StructType\Sender
-     */
-    public function setFirstName($firstName = null)
-    {
-        // validation for constraint: string
-        if (!is_null($firstName) && !is_string($firstName)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($firstName, true), gettype($firstName)), __LINE__);
-        }
-        $this->firstName = $firstName;
-        return $this;
-    }
-    /**
-     * Get email value
-     * @return string|null
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-    /**
-     * Set email value
-     * @param string $email
-     * @return \Colissimo\StructType\Sender
-     */
-    public function setEmail($email = null)
-    {
-        // validation for constraint: string
-        if (!is_null($email) && !is_string($email)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
-        }
-        $this->email = $email;
-        return $this;
-    }
-    /**
-     * Get phoneNumber value
-     * @return string|null
-     */
-    public function getPhoneNumber()
-    {
-        return $this->phoneNumber;
-    }
-    /**
-     * Set phoneNumber value
-     * @param string $phoneNumber
-     * @return \Colissimo\StructType\Sender
-     */
-    public function setPhoneNumber($phoneNumber = null)
-    {
-        // validation for constraint: string
-        if (!is_null($phoneNumber) && !is_string($phoneNumber)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($phoneNumber, true), gettype($phoneNumber)), __LINE__);
-        }
-        $this->phoneNumber = $phoneNumber;
+        $this->address = $address;
         return $this;
     }
 }

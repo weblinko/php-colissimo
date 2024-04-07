@@ -30,6 +30,25 @@ class Generate extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named generateToken
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Colissimo\StructType\GenerateToken $parameters
+     * @return \Colissimo\StructType\GenerateTokenResponse|bool
+     */
+    public function generateToken(\Colissimo\StructType\GenerateToken $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->generateToken($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
+    /**
      * Method to call the operation originally named generateBordereauByParcelsNumbers
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -70,7 +89,7 @@ class Generate extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Colissimo\StructType\GenerateBordereauByParcelsNumbersResponse|\Colissimo\StructType\GenerateCN23Response|\Colissimo\StructType\GenerateLabelResponse
+     * @return \Colissimo\StructType\GenerateBordereauByParcelsNumbersResponse|\Colissimo\StructType\GenerateCN23Response|\Colissimo\StructType\GenerateLabelResponse|\Colissimo\StructType\GenerateTokenResponse
      */
     public function getResult()
     {

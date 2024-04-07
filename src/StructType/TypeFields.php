@@ -5,10 +5,10 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for fields StructType
+ * This class stands for typeFields StructType
  * @subpackage Structs
  */
-class Fields extends AbstractStructBase
+class TypeFields extends AbstractStructBase
 {
     /**
      * The field
@@ -20,8 +20,8 @@ class Fields extends AbstractStructBase
      */
     public $field;
     /**
-     * Constructor method for fields
-     * @uses Fields::setField()
+     * Constructor method for typeFields
+     * @uses TypeFields::setField()
      * @param \Colissimo\StructType\Field[] $field
      */
     public function __construct(array $field = array())
@@ -50,10 +50,10 @@ class Fields extends AbstractStructBase
     {
         $message = '';
         $invalidValues = [];
-        foreach ($values as $fieldsFieldItem) {
+        foreach ($values as $typeFieldsFieldItem) {
             // validation for constraint: itemType
-            if (!$fieldsFieldItem instanceof \Colissimo\StructType\Field) {
-                $invalidValues[] = is_object($fieldsFieldItem) ? get_class($fieldsFieldItem) : sprintf('%s(%s)', gettype($fieldsFieldItem), var_export($fieldsFieldItem, true));
+            if (!$typeFieldsFieldItem instanceof \Colissimo\StructType\Field) {
+                $invalidValues[] = is_object($typeFieldsFieldItem) ? get_class($typeFieldsFieldItem) : sprintf('%s(%s)', gettype($typeFieldsFieldItem), var_export($typeFieldsFieldItem, true));
             }
         }
         if (!empty($invalidValues)) {
@@ -68,7 +68,7 @@ class Fields extends AbstractStructBase
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
      * @param \Colissimo\StructType\Field[] $field
-     * @return \Colissimo\StructType\Fields
+     * @return \Colissimo\StructType\TypeFields
      */
     public function setField(array $field = array())
     {
@@ -87,7 +87,7 @@ class Fields extends AbstractStructBase
      * Add item to field value
      * @throws \InvalidArgumentException
      * @param \Colissimo\StructType\Field $item
-     * @return \Colissimo\StructType\Fields
+     * @return \Colissimo\StructType\TypeFields
      */
     public function addToField(\Colissimo\StructType\Field $item)
     {

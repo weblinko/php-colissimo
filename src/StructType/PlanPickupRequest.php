@@ -34,7 +34,7 @@ class PlanPickupRequest extends AbstractStructBase
     public $mailBoxPickingDate;
     /**
      * The sender
-     * @var \Colissimo\StructType\Sender
+     * @var \Colissimo\StructType\TypePlanPickupSender
      */
     public $sender;
     /**
@@ -48,9 +48,9 @@ class PlanPickupRequest extends AbstractStructBase
      * @param string $password
      * @param string $parcelNumber
      * @param string $mailBoxPickingDate
-     * @param \Colissimo\StructType\Sender $sender
+     * @param \Colissimo\StructType\TypePlanPickupSender $sender
      */
-    public function __construct($contractNumber = null, $password = null, $parcelNumber = null, $mailBoxPickingDate = null, \Colissimo\StructType\Sender $sender = null)
+    public function __construct($contractNumber = null, $password = null, $parcelNumber = null, $mailBoxPickingDate = null, \Colissimo\StructType\TypePlanPickupSender $sender = null)
     {
         $this
             ->setContractNumber($contractNumber)
@@ -149,7 +149,7 @@ class PlanPickupRequest extends AbstractStructBase
     }
     /**
      * Get sender value
-     * @return \Colissimo\StructType\Sender|null
+     * @return \Colissimo\StructType\TypePlanPickupSender|null
      */
     public function getSender()
     {
@@ -157,10 +157,10 @@ class PlanPickupRequest extends AbstractStructBase
     }
     /**
      * Set sender value
-     * @param \Colissimo\StructType\Sender $sender
+     * @param \Colissimo\StructType\TypePlanPickupSender $sender
      * @return \Colissimo\StructType\PlanPickupRequest
      */
-    public function setSender(\Colissimo\StructType\Sender $sender = null)
+    public function setSender(\Colissimo\StructType\TypePlanPickupSender $sender = null)
     {
         $this->sender = $sender;
         return $this;

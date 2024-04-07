@@ -5,10 +5,10 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for importerAddress StructType
+ * This class stands for typeAdresse StructType
  * @subpackage Structs
  */
-class ImporterAddress extends AbstractStructBase
+class TypeAdresse extends AbstractStructBase
 {
     /**
      * The companyName
@@ -137,25 +137,25 @@ class ImporterAddress extends AbstractStructBase
      */
     public $stateOrProvinceCode;
     /**
-     * Constructor method for importerAddress
-     * @uses ImporterAddress::setCompanyName()
-     * @uses ImporterAddress::setLastName()
-     * @uses ImporterAddress::setFirstName()
-     * @uses ImporterAddress::setLine0()
-     * @uses ImporterAddress::setLine1()
-     * @uses ImporterAddress::setLine2()
-     * @uses ImporterAddress::setLine3()
-     * @uses ImporterAddress::setCountryCode()
-     * @uses ImporterAddress::setCity()
-     * @uses ImporterAddress::setZipCode()
-     * @uses ImporterAddress::setPhoneNumber()
-     * @uses ImporterAddress::setMobileNumber()
-     * @uses ImporterAddress::setDoorCode1()
-     * @uses ImporterAddress::setDoorCode2()
-     * @uses ImporterAddress::setEmail()
-     * @uses ImporterAddress::setIntercom()
-     * @uses ImporterAddress::setLanguage()
-     * @uses ImporterAddress::setStateOrProvinceCode()
+     * Constructor method for typeAdresse
+     * @uses TypeAdresse::setCompanyName()
+     * @uses TypeAdresse::setLastName()
+     * @uses TypeAdresse::setFirstName()
+     * @uses TypeAdresse::setLine0()
+     * @uses TypeAdresse::setLine1()
+     * @uses TypeAdresse::setLine2()
+     * @uses TypeAdresse::setLine3()
+     * @uses TypeAdresse::setCountryCode()
+     * @uses TypeAdresse::setCity()
+     * @uses TypeAdresse::setZipCode()
+     * @uses TypeAdresse::setPhoneNumber()
+     * @uses TypeAdresse::setMobileNumber()
+     * @uses TypeAdresse::setDoorCode1()
+     * @uses TypeAdresse::setDoorCode2()
+     * @uses TypeAdresse::setEmail()
+     * @uses TypeAdresse::setIntercom()
+     * @uses TypeAdresse::setLanguage()
+     * @uses TypeAdresse::setStateOrProvinceCode()
      * @param string $companyName
      * @param string $lastName
      * @param string $firstName
@@ -208,7 +208,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setCompanyName($companyName = null)
     {
@@ -230,7 +230,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set lastName value
      * @param string $lastName
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setLastName($lastName = null)
     {
@@ -252,7 +252,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setFirstName($firstName = null)
     {
@@ -274,7 +274,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set line0 value
      * @param string $line0
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setLine0($line0 = null)
     {
@@ -296,7 +296,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set line1 value
      * @param string $line1
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setLine1($line1 = null)
     {
@@ -318,7 +318,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set line2 value
      * @param string $line2
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setLine2($line2 = null)
     {
@@ -340,7 +340,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set line3 value
      * @param string $line3
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setLine3($line3 = null)
     {
@@ -362,7 +362,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setCountryCode($countryCode = null)
     {
@@ -384,7 +384,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setCity($city = null)
     {
@@ -406,7 +406,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setZipCode($zipCode = null)
     {
@@ -428,7 +428,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set phoneNumber value
      * @param string $phoneNumber
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -450,7 +450,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set mobileNumber value
      * @param string $mobileNumber
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setMobileNumber($mobileNumber = null)
     {
@@ -472,7 +472,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set doorCode1 value
      * @param string $doorCode1
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setDoorCode1($doorCode1 = null)
     {
@@ -494,7 +494,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set doorCode2 value
      * @param string $doorCode2
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setDoorCode2($doorCode2 = null)
     {
@@ -516,7 +516,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setEmail($email = null)
     {
@@ -538,7 +538,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set intercom value
      * @param string $intercom
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setIntercom($intercom = null)
     {
@@ -560,7 +560,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setLanguage($language = null)
     {
@@ -582,7 +582,7 @@ class ImporterAddress extends AbstractStructBase
     /**
      * Set stateOrProvinceCode value
      * @param string $stateOrProvinceCode
-     * @return \Colissimo\StructType\ImporterAddress
+     * @return \Colissimo\StructType\TypeAdresse
      */
     public function setStateOrProvinceCode($stateOrProvinceCode = null)
     {

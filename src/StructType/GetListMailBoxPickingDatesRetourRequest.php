@@ -5,7 +5,7 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for getListMailBoxPickingDatesRetourRequest StructType
+ * This class stands for GetListMailBoxPickingDatesRetourRequest StructType
  * @subpackage Structs
  */
 class GetListMailBoxPickingDatesRetourRequest extends AbstractStructBase
@@ -26,7 +26,7 @@ class GetListMailBoxPickingDatesRetourRequest extends AbstractStructBase
      */
     public $sender;
     /**
-     * Constructor method for getListMailBoxPickingDatesRetourRequest
+     * Constructor method for GetListMailBoxPickingDatesRetourRequest
      * @uses GetListMailBoxPickingDatesRetourRequest::setContractNumber()
      * @uses GetListMailBoxPickingDatesRetourRequest::setPassword()
      * @uses GetListMailBoxPickingDatesRetourRequest::setSender()

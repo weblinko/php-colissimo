@@ -40,7 +40,7 @@ class Addressee extends AbstractStructBase
     public $promotionCode;
     /**
      * The address
-     * @var \Colissimo\StructType\Address
+     * @var \Colissimo\StructType\TypeAdresse
      */
     public $address;
     /**
@@ -54,9 +54,9 @@ class Addressee extends AbstractStructBase
      * @param bool $codeBarForReference
      * @param string $serviceInfo
      * @param string $promotionCode
-     * @param \Colissimo\StructType\Address $address
+     * @param \Colissimo\StructType\TypeAdresse $address
      */
-    public function __construct($addresseeParcelRef = null, $codeBarForReference = null, $serviceInfo = null, $promotionCode = null, \Colissimo\StructType\Address $address = null)
+    public function __construct($addresseeParcelRef = null, $codeBarForReference = null, $serviceInfo = null, $promotionCode = null, \Colissimo\StructType\TypeAdresse $address = null)
     {
         $this
             ->setAddresseeParcelRef($addresseeParcelRef)
@@ -155,7 +155,7 @@ class Addressee extends AbstractStructBase
     }
     /**
      * Get address value
-     * @return \Colissimo\StructType\Address|null
+     * @return \Colissimo\StructType\TypeAdresse|null
      */
     public function getAddress()
     {
@@ -163,10 +163,10 @@ class Addressee extends AbstractStructBase
     }
     /**
      * Set address value
-     * @param \Colissimo\StructType\Address $address
+     * @param \Colissimo\StructType\TypeAdresse $address
      * @return \Colissimo\StructType\Addressee
      */
-    public function setAddress(\Colissimo\StructType\Address $address = null)
+    public function setAddress(\Colissimo\StructType\TypeAdresse $address = null)
     {
         $this->address = $address;
         return $this;

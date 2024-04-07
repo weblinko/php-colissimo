@@ -5,7 +5,7 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for getProductInterRequest StructType
+ * This class stands for GetProductInterRequest StructType
  * @subpackage Structs
  */
 class GetProductInterRequest extends AbstractStructBase
@@ -68,7 +68,7 @@ class GetProductInterRequest extends AbstractStructBase
      */
     public $city;
     /**
-     * Constructor method for getProductInterRequest
+     * Constructor method for GetProductInterRequest
      * @uses GetProductInterRequest::setContractNumber()
      * @uses GetProductInterRequest::setPassword()
      * @uses GetProductInterRequest::setProductCode()

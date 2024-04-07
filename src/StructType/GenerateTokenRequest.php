@@ -5,54 +5,56 @@ namespace Colissimo\StructType;
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CheckGenerateLabelRequestType StructType
+ * This class stands for generateTokenRequest StructType
  * @subpackage Structs
  */
-class CheckGenerateLabelRequestType extends AbstractStructBase
+class GenerateTokenRequest extends AbstractStructBase
 {
     /**
      * The contractNumber
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string
      */
     public $contractNumber;
     /**
      * The password
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string
      */
     public $password;
     /**
      * The outputFormat
-     * Meta information extracted from the WSDL
-     * - minOccurs: 0
-     * @var \Colissimo\StructType\OutputFormat
+     * @var \Colissimo\StructType\TypeOutputFormat
      */
     public $outputFormat;
     /**
      * The letter
-     * @var \Colissimo\StructType\Letter
+     * @var \Colissimo\StructType\TypeLetter
      */
     public $letter;
     /**
      * The fields
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Colissimo\StructType\Fields
+     * @var \Colissimo\StructType\TypeFields
      */
     public $fields;
     /**
-     * Constructor method for CheckGenerateLabelRequestType
-     * @uses CheckGenerateLabelRequestType::setContractNumber()
-     * @uses CheckGenerateLabelRequestType::setPassword()
-     * @uses CheckGenerateLabelRequestType::setOutputFormat()
-     * @uses CheckGenerateLabelRequestType::setLetter()
-     * @uses CheckGenerateLabelRequestType::setFields()
+     * Constructor method for generateTokenRequest
+     * @uses GenerateTokenRequest::setContractNumber()
+     * @uses GenerateTokenRequest::setPassword()
+     * @uses GenerateTokenRequest::setOutputFormat()
+     * @uses GenerateTokenRequest::setLetter()
+     * @uses GenerateTokenRequest::setFields()
      * @param string $contractNumber
      * @param string $password
-     * @param \Colissimo\StructType\OutputFormat $outputFormat
-     * @param \Colissimo\StructType\Letter $letter
-     * @param \Colissimo\StructType\Fields $fields
+     * @param \Colissimo\StructType\TypeOutputFormat $outputFormat
+     * @param \Colissimo\StructType\TypeLetter $letter
+     * @param \Colissimo\StructType\TypeFields $fields
      */
-    public function __construct($contractNumber = null, $password = null, \Colissimo\StructType\OutputFormat $outputFormat = null, \Colissimo\StructType\Letter $letter = null, \Colissimo\StructType\Fields $fields = null)
+    public function __construct($contractNumber = null, $password = null, \Colissimo\StructType\TypeOutputFormat $outputFormat = null, \Colissimo\StructType\TypeLetter $letter = null, \Colissimo\StructType\TypeFields $fields = null)
     {
         $this
             ->setContractNumber($contractNumber)
@@ -72,7 +74,7 @@ class CheckGenerateLabelRequestType extends AbstractStructBase
     /**
      * Set contractNumber value
      * @param string $contractNumber
-     * @return \Colissimo\StructType\CheckGenerateLabelRequestType
+     * @return \Colissimo\StructType\GenerateTokenRequest
      */
     public function setContractNumber($contractNumber = null)
     {
@@ -94,7 +96,7 @@ class CheckGenerateLabelRequestType extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Colissimo\StructType\CheckGenerateLabelRequestType
+     * @return \Colissimo\StructType\GenerateTokenRequest
      */
     public function setPassword($password = null)
     {
@@ -107,7 +109,7 @@ class CheckGenerateLabelRequestType extends AbstractStructBase
     }
     /**
      * Get outputFormat value
-     * @return \Colissimo\StructType\OutputFormat|null
+     * @return \Colissimo\StructType\TypeOutputFormat|null
      */
     public function getOutputFormat()
     {
@@ -115,17 +117,17 @@ class CheckGenerateLabelRequestType extends AbstractStructBase
     }
     /**
      * Set outputFormat value
-     * @param \Colissimo\StructType\OutputFormat $outputFormat
-     * @return \Colissimo\StructType\CheckGenerateLabelRequestType
+     * @param \Colissimo\StructType\TypeOutputFormat $outputFormat
+     * @return \Colissimo\StructType\GenerateTokenRequest
      */
-    public function setOutputFormat(\Colissimo\StructType\OutputFormat $outputFormat = null)
+    public function setOutputFormat(\Colissimo\StructType\TypeOutputFormat $outputFormat = null)
     {
         $this->outputFormat = $outputFormat;
         return $this;
     }
     /**
      * Get letter value
-     * @return \Colissimo\StructType\Letter|null
+     * @return \Colissimo\StructType\TypeLetter|null
      */
     public function getLetter()
     {
@@ -133,17 +135,17 @@ class CheckGenerateLabelRequestType extends AbstractStructBase
     }
     /**
      * Set letter value
-     * @param \Colissimo\StructType\Letter $letter
-     * @return \Colissimo\StructType\CheckGenerateLabelRequestType
+     * @param \Colissimo\StructType\TypeLetter $letter
+     * @return \Colissimo\StructType\GenerateTokenRequest
      */
-    public function setLetter(\Colissimo\StructType\Letter $letter = null)
+    public function setLetter(\Colissimo\StructType\TypeLetter $letter = null)
     {
         $this->letter = $letter;
         return $this;
     }
     /**
      * Get fields value
-     * @return \Colissimo\StructType\Fields|null
+     * @return \Colissimo\StructType\TypeFields|null
      */
     public function getFields()
     {
@@ -151,10 +153,10 @@ class CheckGenerateLabelRequestType extends AbstractStructBase
     }
     /**
      * Set fields value
-     * @param \Colissimo\StructType\Fields $fields
-     * @return \Colissimo\StructType\CheckGenerateLabelRequestType
+     * @param \Colissimo\StructType\TypeFields $fields
+     * @return \Colissimo\StructType\GenerateTokenRequest
      */
-    public function setFields(\Colissimo\StructType\Fields $fields = null)
+    public function setFields(\Colissimo\StructType\TypeFields $fields = null)
     {
         $this->fields = $fields;
         return $this;
