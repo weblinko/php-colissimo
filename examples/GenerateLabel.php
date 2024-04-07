@@ -19,6 +19,7 @@ use Colissimo\StructType\Parcel;
 use Colissimo\StructType\Sender;
 use Colissimo\StructType\TypeAdresse;
 use Colissimo\StructType\Addressee;
+use Colissimo\ServiceType\MTOM_ResponseReader
 
 /**
  * Your Colissimo contract number
