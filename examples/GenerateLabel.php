@@ -11,13 +11,13 @@ use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 use Colissimo\ClassMap;
 use Colissimo\ServiceType\Generate;
 use Colissimo\StructType\GenerateLabelRequest;
-use Colissimo\StructType\OutputFormat;
-use Colissimo\StructType\Letter;
+use Colissimo\StructType\TypeOutputFormat;
+use Colissimo\StructType\TypeLetter;
 use Colissimo\StructType\GenerateLabel;
 use Colissimo\StructType\Service;
 use Colissimo\StructType\Parcel;
 use Colissimo\StructType\Sender;
-use Colissimo\StructType\Address;
+use Colissimo\StructType\TypeAdresse;
 use Colissimo\StructType\Addressee;
 
 /**
@@ -69,7 +69,7 @@ $parcel->setWeight('1.4'); // Poids en kilo
  * Address : sender
  * expéditeur
  */
-$senderAddress = new Address();
+$senderAddress = new TypeAdresse();
 $senderAddress
     ->setCompanyName('Weblinko') // Facultatif
     ->setLastName('Dupont')
@@ -96,7 +96,7 @@ $sender
  * Address : recipient
  * destinataire
  */
-$recipientAddress = new Address();
+$recipientAddress = new TypeAdresse();
 $recipientAddress
     ->setCompanyName(null) // Facultatif
     ->setLastName('Dupont')
@@ -121,7 +121,7 @@ $addressee
 /**
  * Letter
  */
-$letter = new Letter();
+$letter = new TypeLetter();
 $letter->setService($service)
     ->setParcel($parcel)
     ->setCustomsDeclarations(null)
@@ -138,7 +138,7 @@ $letter->setService($service)
  * PDF_10x15_300dpi
  * PDF_A4_300dpi
  */
-$outputFormat = new OutputFormat();
+$outputFormat = new TypeOutputFormat();
 $outputFormat
     ->setX(0)
     ->setY(0)

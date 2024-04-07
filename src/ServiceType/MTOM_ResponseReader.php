@@ -102,7 +102,7 @@ class MTOM_ResponseReader
    {
       $soap_xml_string = substr($soap_result, strpos($soap_result, '<soap:Envelope '), strrpos($soap_result, '</soap:Envelope>') - strpos($soap_result, '<soap:Envelope ') + strlen('</soap:Envelope>'));
       $soap_xml_string = '<?xml version="1.0" encoding="UTF-8"?>' . trim($soap_xml_string);
-      $dom = new DOMDocument('1.0', 'UTF-8');
+      $dom = new \DOMDocument('1.0', 'UTF-8');
       $dom->formatOutput = true;
       $dom->preserveWhiteSpace = false;
       $dom->resolveExternals = false;
